@@ -1,15 +1,15 @@
 
 ![Status](https://img.shields.io/website-up-down-green-red/https/evehubsrm.vercel.app/.svg)
-![Forks](https://img.shields.io/github/forks/ADITYAVOFFICIAL/EveHub.svg)
-![PR](https://img.shields.io/github/issues-pr/ADITYAVOFFICIAL/EveHub.svg)
+![Forks](https://img.shields.io/github/forks/ADITYAVOFFICIAL/EveHub-Open-Source.svg)
+![PR](https://img.shields.io/github/issues-pr/ADITYAVOFFICIAL/EveHub-Open-Source.svg)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
-![Views](https://views.whatilearened.today/views/github/ADITYAVOFFICIAL/EveHub.svg)
+![Views](https://views.whatilearened.today/views/github/ADITYAVOFFICIAL/EveHub-Open-Source.svg)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![GitHub repo size](https://img.shields.io/github/repo-size/ADITYAVOFFICIAL/EveHub)
+![GitHub repo size](https://img.shields.io/github/repo-size/ADITYAVOFFICIAL/EveHub-Open-Source)
 
 <p align="center">
   <a href="evehubsrm.vercel.app">
-    <img alt = "Logo" height="150" width="150" src = "https://raw.githubusercontent.com/ADITYAVOFFICIAL/EveHub/main/public/logo512.png">
+    <img alt = "Logo" height="150" width="150" src = "https://raw.githubusercontent.com/ADITYAVOFFICIAL/EveHub-Open-Source/main/public/logo512.png">
   </a>
 
 </p>
@@ -25,7 +25,7 @@ This repository serves as a centralized platform to explore and manage events ha
 <br>
 
 ## Demo Screenshot of Home Page
-<img align="center" alt="Home Page"  src="https://raw.githubusercontent.com/ADITYAVOFFICIAL/EveHub/main/public/ss.png">
+<img align="center" alt="Home Page"  src="https://raw.githubusercontent.com/ADITYAVOFFICIAL/EveHub-Open-Source/main/public/ss.png">
 
 ## Setting Up EveHub
 
@@ -82,8 +82,8 @@ B[Open Folder] --> C[npm install --legacy-peer-deps] -->D[npm start]
 
  ## Current Contributors 🔻
 <div align="center">
-  <a href="https://github.com/ADITYAVOFFICIAL/EveHub/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ADITYAVOFFICIAL/EveHub" />
+  <a href="https://github.com/ADITYAVOFFICIAL/EveHub-Open-Source/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ADITYAVOFFICIAL/EveHub-Open-Source" />
 </a>
 </div>
 
