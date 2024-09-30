@@ -220,7 +220,7 @@ function Landing() {
           </p>
           <Link
                 to='/event/66f6a40d52fdd3fdc354'
-                className="bg-gradient-to-b shadow-xl focus:ring-accent from-accent to-accent/90 p-4 text-white text-center"
+                className="bg-gradient-to-b shadow-xl focus:ring-accent from-accent to-accent/90 p-4 text-white text-center hover:scale-90 transform-gpu"
                 style={{ borderRadius: "12px" }}
               >
                 {token ? "VISIT EVENT PAGE" : "VISIT EVENT PAGE"}
