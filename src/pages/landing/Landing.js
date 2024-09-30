@@ -131,7 +131,7 @@ function Landing() {
   const isMobile = window.innerWidth <= 768; 
 
   return (
-    <div className="flex-1 bg-white font-poppins select-none">
+    <div className="flex-1 bg-gray-900 font-poppins select-none">
       <div className="bg-secondary" style={{ borderRadius: "0 0 25px 25px" }}>
         <section
           className="flex flex-col text-center w-full items-center py-8 lg:py-16 justify-center gap-8 md:gap-0 container min-h-[94vh] relative"
@@ -168,15 +168,6 @@ function Landing() {
               Your Events, Our Platform
             </h1>
             <p></p>
-            {/* <div className="inline-flex items-center gap-2">
-              <Link
-                to={"/explore"}
-                className="bg-gradient-to-r shadow-xl from-primary to-primary/90 p-4 text-white text-center"
-                style={{ borderRadius: "12px", fontWeight:"bold"}}
-              >
-                Explore Events
-              </Link>
-            </div> */}
             <div class="w-full h-40 flex items-center justify-center">
           <a href="/explore" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
           <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-500 rounded-full group-hover:w-56 group-hover:h-56 md:bg-blue-500"></span>
@@ -201,7 +192,7 @@ function Landing() {
           <div className=" w-full relative"></div>
         </section>
       </div>
-      <section className="flex flex-col-reverse lg:flex-row-reverse w-full py-8 md:py-16 justify-between gap-8 md:gap-0 container">
+      <section className="flex flex-col-reverse lg:flex-row-reverse w-full py-8 md:py-16 justify-between gap-8 md:gap-0 container bg-gray-900">
         <div className="" style={{ flexBasis: "55%" }}>
           <img alt="Club/Dept Images" className="w-full" src={Security} style={{borderRadius:"25px"}}/>
         </div>
@@ -210,10 +201,10 @@ function Landing() {
           style={{ flexBasis: "50%" }}
         >
           <p className="text-accent tracking-[1px] font-bold items-center gap-2 flex">
-            <hr className="w-20 h-1 bg-accent"></hr> Onboarded Members
+            <hr className="w-20 h-1 bg-accent border-accent"></hr> Onboarded Members
           </p>
-          <hr className="w-full border border-neutral-200"></hr>
-          <ol className="text-sm leading-[1.4rem] md:max-w-[90%] py-4 text-neutral-700 text-justify" style={{ fontWeight: "bold" }}>
+          <hr className="w-full border border-accent"></hr>
+          <ol className="text-sm leading-[1.4rem] md:max-w-[90%] py-4 text-slate-400 text-justify" style={{ fontWeight: "bold" }}>
   <li className="mb-2">1. Data Science Community SRM</li>
   <li className="mb-2">2. The Product House x SRMIST</li>
   <li className="mb-2">3. Aerospace Systems Research Laboratory </li>
@@ -318,7 +309,7 @@ function Landing() {
           ))}
         </Swiper> */}
       </div>
-      <div className="flex-1 bg-secondary font-poppins select-none">    
+      <div className="flex-1 bg-secondary font-poppins select-none ">    
         <section className="container py-8">
           <h2 className="text-3xl font-semibold mb-4" style={{ color: "white" }}>Contact Us</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -334,7 +325,7 @@ function Landing() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full border px-3 py-2"
+                className="w-full border px-3 py-2 border-none bg-gray-700"
                 style={{ borderRadius: "12px" }}
               />
             </div>
@@ -348,7 +339,7 @@ function Landing() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full border px-3 py-2"
+                className="w-full border px-3 py-2 border-none bg-gray-700 "
                 style={{ borderRadius: "12px" }}
               />
             </div>
@@ -360,7 +351,7 @@ function Landing() {
                 value={dropdown1Value}
                 onChange={handleDropdown1Change}
                 required
-                className="w-full border px-3 py-2"
+                className="w-full border px-3 py-2 border-none bg-gray-700 text-slate-400"
                 style={{ borderRadius: "12px" }}
               >
                 <option value="">Select an option</option>
@@ -379,7 +370,7 @@ function Landing() {
                 value={dropdown2Value}
                 onChange={handleDropdown2Change}
                 required
-                className="w-full border px-3 py-2"
+                className="w-full border px-3 py-2 border-none bg-gray-700 text-slate-400"
                 style={{ borderRadius: "12px" }}
               >
                 <option value="">Select an option</option>
@@ -399,7 +390,7 @@ function Landing() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full border px-3 py-2"
+                className="w-full border px-3 py-2 border-none bg-gray-700"
                 style={{ borderRadius: "12px", height: "250px" }}
               ></textarea>
             </div>    

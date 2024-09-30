@@ -52,7 +52,7 @@ function Dashboard() {
           <img alt="not found" className="w-[45%] h-max object-contain" src={NotFoundEvent}/>
         </div>
         }
-        {!loading && eventCount > 0 && <div className="flex justify-between items-center">
+        {!loading && eventCount > 0 && <div className="flex justify-between items-center text-slate-400">
           {
             [
               { label: "Total", count: eventCount },
@@ -75,7 +75,7 @@ function Dashboard() {
                   <p className="text-neutral-600 text-sm font-poppins">
                     {item.label} Events Added
                   </p>
-                  <Link className="sidebar-link -translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all" to={`events?filter=${item.label.toLowerCase()}`}>See all</Link>
+                  <Link className="bg-slate-400 sidebar-link -translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all" to={`events?filter=${item.label.toLowerCase()}`}>See all</Link>
                 </Link>
               );
             })}

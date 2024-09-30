@@ -123,9 +123,9 @@ function convertTo12HourFormat(hours, minutes) {
   
 
   return (
-    <section className="container py-8 pb-16 w-full font-poppins">
+    <section className="container py-8 pb-16 w-full font-poppins ">
       <div className="grid grid-cols-1 md:grid-cols-6 gap-8 md:items-start">
-        <div className="col-span-4 space-y-4">
+        <div className="col-span-4 space-y-4 ">
         <div class="image-container">
   <a href={image} rel="noopener noreferrer">
     <img
@@ -135,12 +135,10 @@ function convertTo12HourFormat(hours, minutes) {
   </a>
   <button onClick={() => window.location.href = image} class="overlay-button primary-btn" style={{borderRadius:"8px", height:"50px"}}>View Full Image</button></div>
 
-
-
-          <div className="flex flex-col md:hidden w-full space-y-4">
-            <div className="rounded-lg flex flex-col gap-4 outline w-full outline-1 outline-neutral-300 p-6">
+          <div className="flex flex-col md:hidden w-full space-y-4 ">
+            <div className="rounded-lg flex flex-col gap-4 outline w-full outline-1 outline-neutral-300 p-6 ">
               <h2 className="font-bold text-xl">{title}</h2>
-              <h3 className="font-bold">
+              <h3 className="font-bold ">
   <span style={{ display: "flex", alignItems: "center" }}>
     {usernamee}
     <MdVerified style={{ color: "#17c3ff", marginLeft: "3px" }} />
@@ -198,7 +196,7 @@ function convertTo12HourFormat(hours, minutes) {
                   </>
                 )}
               </h2>
-              <div className="inline-flex items-center justify-between w-full">
+              <div className="inline-flex items-center justify-between w-full ">
                 <h2 className="inline-flex items-center gap-2 font-extrabold font-grostek text-xl mt-2">
                   <IoWalletOutline />{" "}
                   {price <= 0 ? (
@@ -241,11 +239,11 @@ function convertTo12HourFormat(hours, minutes) {
 )}
             </div>
             
-            <div className="inline-flex w-full items-center gap-2">
+            <div className="inline-flex w-full items-center gap-2 text-slate-400">
               <div className="mr-auto">
                 
-                <h2 className="font-semibold text-lg">Invite your friends</h2>
-                <p className="text-xs text-neutral-500 font-grostek">
+                <h2 className="font-semibold text-lg text-slate-400">Invite your friends</h2>
+                <p className="text-xs text-slate-400 font-grostek">
                   and enjoy a shared experience!
                 </p>
               </div>
@@ -338,7 +336,7 @@ function convertTo12HourFormat(hours, minutes) {
           <h2 className="font-semibold py-2 border-b border-neutral-300 text-lg">
             About
           </h2>
-          <div className="display-linebreak text-neutral-800 text-sm font-grostek">
+          <div className="display-linebreak text-slate-400 text-sm font-grostek">
             {description}
           </div>
           {lumaurl && (
@@ -376,49 +374,49 @@ function convertTo12HourFormat(hours, minutes) {
 
         </div>
         <div className="col-span-2 hidden md:block w-full space-y-4">
-          <div className="rounded-lg flex flex-col gap-4 outline w-full  outline-1 outline-neutral-300 p-6">
-            <h2 className="font-bold text-xl">{title}</h2>
-            <h3 className="font-bold">
+          <div className="rounded-lg flex flex-col gap-4 outline w-full  outline-1 outline-none bg-zinc-900 p-6">
+            <h2 className="font-bold text-xl text-slate-400">{title}</h2>
+            <h3 className="font-bold text-slate-400">
   <span style={{ display: "flex", alignItems: "center" }}>
     {usernamee}
     <MdVerified style={{ color: "#17c3ff", marginLeft: "3px" }} />
   </span>
 </h3>
 
-            <h2 className="inline-flex items-center gap-2 text-sm">
+            <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
               <IoBookmarkOutline /> {category}
             </h2>
             {duration?.length > 0 && (
-              <h2 className="inline-flex items-center gap-2 text-sm">
+              <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
                 <IoTimerOutline /> {duration.split(":").join("h ")}
               </h2>
             )}
             {language?.length > 0 && (
-              <h2 className="inline-flex items-center gap-2 text-sm">
+              <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
                 <IoLanguageOutline /> {language}
               </h2>
             )}
             {medium?.length > 0 && (
-  <h2 className="inline-flex items-center gap-2 text-sm">
+  <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
     <IoMegaphoneOutline /> {medium.charAt(0).toUpperCase() + medium.slice(1)}
   </h2>
 )}
 {maxParticipants && (
-  <h2 className="inline-flex items-center gap-2 text-sm">
+  <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
     <IoPeople />Available Seats : {maxParticipants}
   </h2>
 )}
 
-            <h2 className="inline-flex items-center gap-2 text-sm">
+            <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
               <IoCalendarClearOutline /> {startDay}, {startTime}
               {startDay === endDay && ` to ${endTime}`}
             </h2>
             {startDay !== endDay && endDate && endDay && (
-              <h2 className="inline-flex items-center gap-2 text-sm">
+              <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
                 <IoBookmarkOutline /> {endDay}, {endTime}
               </h2>
             )}
-            <h2 className="inline-flex flex-wrap items-center gap-2 text-sm">
+            <h2 className="inline-flex flex-wrap items-center gap-2 text-sm text-slate-400">
               {medium === "offline" ? (
                 <>
                   <IoLocationOutline />
@@ -437,7 +435,7 @@ function convertTo12HourFormat(hours, minutes) {
               )}
             </h2>
 { (name1 || ph1 || name2 || ph2) && (
-  <div className="rounded-lg flex flex-col gap-4 outline w-full outline-1 outline-neutral-300 p-6">
+  <div className="rounded-lg flex flex-col gap-4 outline w-full outline-1 outline-none p-6 text-slate-400 bg-zinc-800">
     <h2 className="font-bold text-md">Contact Details</h2>
     { name1 && (
       <p style={{ fontSize: "14px", margin: "0", padding: "0", lineHeight: "1" }}>
@@ -463,7 +461,7 @@ function convertTo12HourFormat(hours, minutes) {
 )}
 
             <div className="inline-flex items-center justify-between w-full">
-              <h2 className="inline-flex items-center gap-2 font-extrabold font-grostek text-xl mt-2">
+              <h2 className="inline-flex items-center gap-2 font-extrabold font-grostek text-xl mt-2 text-slate-400">
                 <IoWalletOutline />{" "}
                 {price <= 0 ? (
                   "Free"
@@ -481,9 +479,9 @@ function convertTo12HourFormat(hours, minutes) {
           </div>
           <div className="inline-flex w-full items-center gap-2">
   <div className="mr-auto">
-    <h2 className="font-semibold text-lg">Invite your friends</h2>
+    <h2 className="font-semibold text-lg text-slate-400">Invite your friends</h2>
     <p className="text-xs text-neutral-500 font-grostek">
-      and enjoy a shared experience!
+      and enjoy together!
     </p>
   </div>
   {shareLinks?.map((link, index) => (
@@ -492,7 +490,7 @@ function convertTo12HourFormat(hours, minutes) {
       target="_blank"
       title={`Share on ${link?.title}`}
       rel="noopener noreferrer"
-      className={`border flex items-center justify-center rounded-full p-2 text-xl hover:scale-125 transition-all text-white bg-gradient-to-br ${link?.color}`}
+      className={`border flex items-center justify-center rounded-xl border-none p-2 text-xl hover:scale-125 transition-all text-white bg-gradient-to-br ${link?.color}`}
       key={index}
     >
       {link?.icon}

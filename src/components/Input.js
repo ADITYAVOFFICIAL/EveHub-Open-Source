@@ -15,7 +15,7 @@ function Input({
   disabled
 }) {
   return ( show &&
-    <div className="flex flex-col">
+    <div className="flex flex-col text-slate-400 font-medium">
       {label && <label className="text-sm mb-2 text-neutral-500">{label}{required && <span className="text-red-600">*</span>}</label>}
       {options ? (
         <div className="inline-flex gap-2 flex-wrap" >

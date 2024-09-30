@@ -46,30 +46,21 @@ function Sidebar() {
   }, [getUserInfo]);
 
   return (
-    <div className="flex flex-col p-4 border-r border-neutral-200 gap-2 ">
-      <div className="sidebar-link hover:bg-transparent hover:shadow-none w-max">
+    <div className="flex flex-col p-4 border-r border-slate-600 text-slate-400 rounded-r-3xl gap-2">
+      <div className="sidebar-link hover:bg-transparent hover:shadow-none w-max text-slate-400">
         <Brand />
       </div>
       <Link className="sidebar-link" to="">
-        <IoHomeOutline /> Home
+        <IoHomeOutline className="text-slate-400"/> Home
       </Link><Link className="sidebar-link" to="calendar">
-        <IoCalendarNumberOutline /> Shared Calendar
+        <IoCalendarNumberOutline className="text-slate-400" /> Shared Calendar
       </Link>
-      {/* <NavLink className="sidebar-link" to="metricdisplay">
-        <IoSpeedometer /> Metrics
-      </NavLink> */}
       <NavLink className="sidebar-link" to="events?filter=total">
-        <IoTicketOutline /> Events
+        <IoTicketOutline className="text-slate-400" /> Events
       </NavLink>
-      {/* <NavLink className="sidebar-link" to="invities">
-        <IoTicketOutline /> Invities
-      </NavLink> */}
-      {/* <NavLink className="sidebar-link" to="rsvp">
-        <IoPeopleOutline /> RSVPs
-      </NavLink> */}
       <button className="sidebar-link" onClick={toggleNotificationBar}>
         <div className="relative">
-          <IoNotificationsOutline />
+          <IoNotificationsOutline  className="text-slate-400"/>
           {unreadNotifications > 0 && (
             <p className="absolute -top-3 p-2 aspect-square -right-2 bg-primary text-white rounded-full text-[10px] text-center w-2 h-2 flex items-center justify-center">
               <span className="w-max h-max">
@@ -81,17 +72,17 @@ function Sidebar() {
         Notifications
       </button>
       <NavLink className="sidebar-link" to="pdfer">
-        <IoBook /> Instructions
+        <IoBook  className="text-slate-400"/> Instructions
       </NavLink>  
       <div className="mt-auto flex flex-col">
       <NavLink
   title={userInfo?.email}
-  className="sidebar-link inline-flex items-center gap-1"
+  className="sidebar-link inline-flex items-center gap-1 "
   to="account"
 >
   {userInfo ? (
     <>
-      <IoPersonOutline /> {userInfo?.name}
+      <IoPersonOutline  className="text-slate-400"/> {userInfo?.name}
     </>
   ) : (
     "Account"
@@ -99,7 +90,7 @@ function Sidebar() {
 </NavLink>
 
         <button className="sidebar-link" onClick={logout}>
-          <IoLogOutOutline /> Logout
+          <IoLogOutOutline  className="text-slate-400"/> Logout
         </button>
       </div>
     </div>

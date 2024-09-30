@@ -14,7 +14,7 @@ function NotificationCard({userId, fromUserId, fromUserName, link, message, $cre
   const time = dayjs($createdAt).fromNow(true)
 
   return (
-    <div className='p-4 rounded-[18px] flex flex-row items-center gap-2 shadow outline outline-1 outline-neutral-200 bg-slate-100 relative'>
+    <div className='p-4 rounded-[18px] flex flex-row items-center gap-2 shadow outline outline-1 outline-neutral-200 bg-slate-900 relative'>
           <Avatar name={fromUserName} />
         <div className='relative'>
             <p className='text-sm font-semibold'>{fromUserName}</p>

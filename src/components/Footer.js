@@ -10,27 +10,16 @@ function Footer() {
           ? { borderRadius: "25px 25px 0 0" }
           : {}
       }>
-    {/* <div className='w-full flex flex-row items-start uppercase gap-4 justify-between container'>
-        <div className='flex flex-col items-start gap-2'>
-            <Brand/>
-            <p className='font-medium capitalize text-md '>Subtitle Lorem Ipsum!</p>
-        </div>
-        <ul className='flex flex-col items-start gap-1'> 
-            <NavLink  className='font-light text-sm ' to={'/explore'}>Explore</NavLink>
-            <NavLink  className='font-light text-sm ' to={`/dashboard`}>Dashboard</NavLink>
-        </ul>
-    </div> */}
-    {/* <hr className='bg-neutral-100 border border-neutral-100 opacity-100'></hr> */}
     <ul className='md:w-full flex flex-row flex-wrap items-center justify-center gap-4'>
         {footerLinks.map((link, index) => 
-        <li className='border flex items-center justify-center rounded-full p-2 text-2xl hover:scale-125 transition-all'>
+        <li className='border flex items-center justify-center rounded-2xl p-3 pr-8 pl-8 bg-gray-950 text-2xl hover:scale-125 transition-all'>
             <Link className='' target={'_blank'} to={link.link} title={link.title}>{link.icon}</Link>
         </li>
         )}
         
     </ul>
     <div>
-        <p className='text-neutral-300 text-xs md:text-sm text-center'>&copy; EveHub {new Date().getFullYear()} | All rights reserved | <Link className='hover:text-accent hover:underline' target='_blank' to='https://adityaver.netlify.app/'>ADITYA VERMA</Link> | <Link className='hover:text-accent hover:underline' to='/dashboard'>For Organisers</Link></p>
+        <p className='text-neutral-300 text-xs md:text-sm text-center font-medium'>&copy; EveHub {new Date().getFullYear()} | All rights reserved | <Link className='hover:text-accent hover:underline' target='_blank' to='https://adityaver.netlify.app/'>ADITYA VERMA</Link> | <Link className='hover:text-accent hover:underline' to='/dashboard'>For Organisers</Link></p>
     </div>
     </div>
   )

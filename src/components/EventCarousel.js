@@ -14,23 +14,25 @@ function EventCarousel({ events, title }) {
   return (
     <div>
       <div className="inline-flex items-center w-full justify-between">
-        <h1 className="page-title">{title} Events</h1>
-        <div className="inline-flex text-primary gap-4 justify-end items-center">
+        <h1 className="page-title text-slate-300">{title} Events</h1>
+        <div className="inline-flex gap-4 justify-end items-center">
           <button
+            className="flex items-center justify-center w-10 h-10 rounded-xl bg-slate-800 text-white hover:bg-opacity-80 transition duration-300"
             onClick={() => {
               firstSwiperRef.current.swiper.slidePrev();
               secondSwiperRef.current.swiper.slidePrev();
             }}
           >
-            <IoArrowBack />
+            <IoArrowBack className="w-5 h-5" />
           </button>
           <button
+            className="flex items-center justify-center w-10 h-10 rounded-xl bg-slate-800 text-white hover:bg-opacity-80 transition duration-300"
             onClick={() => {
               firstSwiperRef.current.swiper.slideNext();
               secondSwiperRef.current.swiper.slideNext();
             }}
           >
-            <IoArrowForward />
+            <IoArrowForward className="w-5 h-5" />
           </button>
         </div>
       </div>
@@ -41,6 +43,7 @@ function EventCarousel({ events, title }) {
           modules={[Navigation]}
           slidesPerView={4}
           spaceBetween={20}
+          speed={800} // Adjust the speed here if needed
           breakpoints={{
             360: {
               slidesPerView: 1,
@@ -57,7 +60,7 @@ function EventCarousel({ events, title }) {
           }}
         >
           {events?.slice(0, 4).map((item) => (
-            <SwiperSlide>
+            <SwiperSlide key={item.id}> {/* Make sure to add a unique key */}
               <ExploreEventCard {...item} />
             </SwiperSlide>
           ))}
@@ -71,6 +74,7 @@ function EventCarousel({ events, title }) {
             modules={[Navigation]}
             slidesPerView={4}
             spaceBetween={20}
+            speed={800} // Adjust the speed here as well
             breakpoints={{
               360: {
                 slidesPerView: 1,
@@ -87,7 +91,7 @@ function EventCarousel({ events, title }) {
             }}
           >
             {remainingEvents.map((item) => (
-              <SwiperSlide>
+              <SwiperSlide key={item.id}> {/* Make sure to add a unique key */}
                 <ExploreEventCard {...item} />
               </SwiperSlide>
             ))}

@@ -37,7 +37,7 @@ function Events() {
 
   return (
     <>
-      <div className="w-full px-6 my-4 rounded-[18px] bg-neutral-200 outline outline-1 outline-neutral-200 flex items-center justify-between">
+      <div className="w-full px-6 my-4 rounded-[18px] bg-slate-800 outline outline-1 text-slate-400 outline-slate-800 flex items-center justify-between">
         <input
           onChange={(e) => {
             e?.preventDefault();

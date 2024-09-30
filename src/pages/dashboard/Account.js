@@ -130,10 +130,10 @@ function Account() {
   }, [updateFields]);
 
   return (
-    <div className="relative flex flex-col items-center justify-center h-full w-full gap-4">
-      <h1 className="page-title" style={{ fontSize: "50px", paddingBottom: "10px" }}>YOUR PROFILE PAGE</h1>
+    <div className="relative flex flex-col items-center justify-center h-full w-full gap-4 texterside">
+      <h1 className="page-title text-slate-400" style={{ fontSize: "50px", paddingBottom: "10px" }}>YOUR PROFILE PAGE</h1>
       <Avatar size={"text-3xl"} name={userName} />
-      <h1 className="page-title">Hello, {userName} 👋🏼</h1>
+      <h1 className="page-title text-slate-400">Hello, {userName} 👋🏼</h1>
       <form
         onSubmit={handleUpdateFields}
         className="flex flex-col gap-4 w-full max-w-[400px]"
@@ -141,27 +141,8 @@ function Account() {
         {inputFields?.map((field, index) => (
           <Input key={index} {...field} show={true} />
         ))}
-        {/* <button
-          className="rounded-[18px] bg-black mt-2 p-4 outline outline-1 outline-black text-neutral-300"
-          onClick={(e) => {
-            e.preventDefault();
-            setUpdateFields((prev) => !prev);
-          }}
-        >
-          {updateFields ? "Cancel" : "Edit"}
-        </button>
-        {updateFields && (
-          <Button
-            type="submit"
-            className="primary-btn"
-            style="mt-0"
-            text={"Save"}
-            disabled={!updateFields}
-            loading={loading}
-          />
-        )} */}
       </form>
-      <p style={{ fontWeight: "bold" }}>To change your password send mail to av4923@srmist.edu.in</p>
+      <p className="font-bold text-slate-400">To change your password send mail to av4923@srmist.edu.in</p>
       <img src={batGif} alt="Bat" className="absolute bottom-0 left-0 w-30 h-auto animate-bat" />
     </div>
   );

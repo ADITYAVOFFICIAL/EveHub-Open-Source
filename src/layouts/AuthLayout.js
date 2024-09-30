@@ -16,14 +16,14 @@ function AuthLayout() {
     ? "Sign in"
     : "Create an account";
   return (
-    <div className="p-4 min-h-screen grid md:grid-cols-2 text-black">
+    <div className="p-4 min-h-screen grid md:grid-cols-2 text-slate-400">
       <div>
         {!token && <BackBtn to={"/"} />}
         <div className="flex flex-col items-center md:items-start md:h-full justify-center p-8 md:p-16 gap-4">
           <Brand size={"w-16 md:hidden"} />
-          <h2 className="text-3xl font-bold">{pageTitle}</h2>
+          <h2 className="text-3xl font-bold text-slate-400">{pageTitle}</h2>
           <Outlet />
-          <p>If you have forgotten your password, please contact us at av4923@srmist.edu.in.</p>
+          <p className="text-slate-400">If you have forgotten your password, please contact us at av4923@srmist.edu.in.</p>
           {/* {!token && (
             <p>
               {pageTitle === "Sign in" ? (

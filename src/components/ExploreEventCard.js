@@ -28,17 +28,17 @@ function ExploreEventCard({
                 alt={title}
                 className="object-cover w-full rounded-lg aspect-video"
             />
-            <div className="absolute m-2 rounded text-sm top-0 right-0 text-center font-semibold bg-white shadow p-2">
+            <div className="absolute m-2 rounded text-sm top-0 right-0 text-center font-semibold bg-black text-slate-400 shadow p-2">
                 <h3>{startDate}</h3>
                 <p>{month}</p>
             </div>
-            <div className="absolute m-2 rounded text-xs bottom-0 left-0 text-center bg-white shadow p-2" style={{fontWeight:"bold"}}>
+            <div className="absolute m-2 rounded text-xs bottom-0 left-0 text-center bg-black text-slate-400 shadow p-2" style={{fontWeight:"bold"}}>
                 <p>{category}</p>
             </div>
         </div>
         <div className="py-2">
-    <h1 className="font-bold" style={{ fontSize: "20px", whiteSpace: 'normal' }}>{title}</h1>
-    <div className="font-bold" style={{ display: 'flex', alignItems: 'center', fontSize: '14px', whiteSpace: 'normal' }}>
+    <h1 className="font-bold text-slate-400" style={{ fontSize: "20px", whiteSpace: 'normal' }}>{title}</h1>
+    <div className="font-bold text-slate-400" style={{ display: 'flex', alignItems: 'center', fontSize: '14px', whiteSpace: 'normal' }}>
   {usernamee}
   <MdVerified style={{ color: "#17c3ff", marginLeft: "3px" }} />
 </div>
@@ -46,9 +46,9 @@ function ExploreEventCard({
   border: "1px solid",
   borderRadius: "6px",
   height: "17px",
-  color: "black",
-  borderColor: "black",
-  backgroundColor: "black",
+  color: "#0f172a",
+  borderColor: "#0f172a",
+  backgroundColor: "#0f172a",
   fontWeight: "bold",
   marginTop: "0px"
 }}>

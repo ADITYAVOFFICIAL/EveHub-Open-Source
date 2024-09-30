@@ -23,7 +23,7 @@ function Cal() {
           process.env.REACT_APP_EVENTS_COLLECTION_ID
         );
 
-        console.log("Fetched events:", response.documents);
+        // console.log("Fetched events:", response.documents);
 
         const transformedEvents = response.documents.map(event => ({
           title: event.title,
@@ -33,10 +33,10 @@ function Cal() {
           // Add more fields as needed
         }));
 
-        console.log('Transformed events:', transformedEvents);
+        // console.log('Transformed events:', transformedEvents);
         setEvents(transformedEvents);
       } catch (error) {
-        console.error('Error fetching events:', error);
+        // console.error('Error fetching events:', error);
       }
     };
 
@@ -55,7 +55,7 @@ function Cal() {
   };
 
   return (
-    <div>
+    <div className='text-slate-400'>
       <FullCalendar
         plugins={[dayGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
