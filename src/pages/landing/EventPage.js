@@ -333,7 +333,7 @@ function convertTo12HourFormat(hours, minutes) {
   </div>
 )}
 
-          <h2 className="font-semibold py-2 border-b border-neutral-300 text-lg">
+          <h2 className="text-slate-300 font-semibold py-2 border-b border-neutral-300 text-lg">
             About
           </h2>
           <div className="display-linebreak text-slate-400 text-sm font-grostek">
@@ -352,10 +352,10 @@ function convertTo12HourFormat(hours, minutes) {
 )}
           {tnc && (
   <>
-    <h2 className="font-semibold py-2 border-b border-neutral-300 text-lg">
+    <h2 className="text-slate-300 font-semibold py-2 border-b border-neutral-300 text-lg">
       Terms and Conditions
     </h2>
-    <div className="display-linebreak text-neutral-800 text-sm font-grostek">
+    <div className="display-linebreak text-slate-400 text-sm font-grostek">
       {tnc
         .split("\n\n") // Split by double line breaks to separate sections
         .map((section, index) => (
@@ -375,8 +375,8 @@ function convertTo12HourFormat(hours, minutes) {
         </div>
         <div className="col-span-2 hidden md:block w-full space-y-4">
           <div className="rounded-lg flex flex-col gap-4 outline w-full  outline-1 outline-none bg-zinc-900 p-6">
-            <h2 className="font-bold text-xl text-slate-400">{title}</h2>
-            <h3 className="font-bold text-slate-400">
+            <h2 className="font-bold text-xl text-slate-200">{title}</h2>
+            <h3 className="font-bold text-slate-300">
   <span style={{ display: "flex", alignItems: "center" }}>
     {usernamee}
     <MdVerified style={{ color: "#17c3ff", marginLeft: "3px" }} />
