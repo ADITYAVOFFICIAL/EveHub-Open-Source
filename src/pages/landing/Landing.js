@@ -192,7 +192,7 @@ function Landing() {
           <div className=" w-full relative"></div>
         </section>
       </div>
-      <section className="flex flex-col-reverse  lg:flex-row w-full py-8 md:py-16 justify-between gap-8 md:gap-0 container">
+      {/* <section className="flex flex-col-reverse  lg:flex-row w-full py-8 md:py-16 justify-between gap-8 md:gap-0 container">
         <div className="md:pt-16 " style={{ flexBasis: "50%" }}>
           <img className="w-full" src="https://srmsigkdd-cdn.netlify.app/images/web_poster.png" />
         </div>
@@ -226,7 +226,7 @@ function Landing() {
                 {token ? "VISIT EVENT PAGE" : "VISIT EVENT PAGE"}
               </Link>
         </div>
-      </section> 
+      </section>  */}
       <section className="flex flex-col-reverse lg:flex-row-reverse w-full py-8 md:py-16 justify-between gap-8 md:gap-0 container bg-gray-900">
         <div className="" style={{ flexBasis: "55%" }}>
           <img alt="Club/Dept Images" className="w-full" src={Security} style={{borderRadius:"25px"}}/>
