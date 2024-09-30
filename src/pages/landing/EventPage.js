@@ -244,7 +244,7 @@ function convertTo12HourFormat(hours, minutes) {
                 
                 <h2 className="font-semibold text-lg text-slate-400">Invite your friends</h2>
                 <p className="text-xs text-slate-400 font-grostek">
-                  and enjoy a shared experience!
+                  and enjoy together!
                 </p>
               </div>
               {shareLinks?.map((link, index) => (
@@ -256,7 +256,7 @@ function convertTo12HourFormat(hours, minutes) {
                   )}
                   target="_blank"
                   title={`Share on ${link?.title}`}
-                  className={`border flex items-center justify-center rounded-full p-2 text-xl hover:scale-125 transition-all text-white bg-gradient-to-br ${link?.color}`}
+                  className={`border flex items-center justify-center rounded-xl border-none p-2 text-xl hover:scale-125 transition-all text-white bg-gradient-to-br ${link?.color}`}
                 >
                   {link?.icon}
                 </a>

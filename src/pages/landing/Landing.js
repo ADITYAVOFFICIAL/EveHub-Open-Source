@@ -126,7 +126,7 @@ function Landing() {
   
   const swiperRef = useRef(null);
 
-  // const token = JSON.parse(localStorage.getItem("token"));
+  const token = JSON.parse(localStorage.getItem("token"));
 
   const isMobile = window.innerWidth <= 768; 
 
@@ -192,6 +192,41 @@ function Landing() {
           <div className=" w-full relative"></div>
         </section>
       </div>
+      <section className="flex flex-col-reverse  lg:flex-row w-full py-8 md:py-16 justify-between gap-8 md:gap-0 container">
+        <div className="md:pt-16 " style={{ flexBasis: "50%" }}>
+          <img className="w-full" src="https://srmsigkdd-cdn.netlify.app/images/web_poster.png" />
+        </div>
+        <div
+          className="flex flex-col gap-4 items-start justify-evenly text-left py-8 lg:pl-16"
+          style={{ flexBasis: "50%" }}
+        >
+          <p className="text-accent tracking-[1px] font-semibold items-center gap-2 flex">
+            <hr className="w-20 h-1 bg-accent border-accent"></hr>
+          </p>
+          <h1 className="text-3xl md:text-5xl text-primary font-semibold md:leading-normal">
+            React-N-Roll
+          </h1>
+          <hr className="w-full border border-accent"></hr>
+          <p className="text-sm leading-[1.4rem] md:max-w-[90%] py-4 text-neutral-500 text-justify">
+          🚀 Join us at React N-Roll! 🚀
+
+​Dive into the world of web development with our exclusive hands-on event, where you'll learn the magic behind building dynamic web applications using React. Whether you're new to coding or an aspiring developer, this session will guide you through the essentials of HTML, CSS, and JavaScript, and show you how to create real-world applications with React, Node.js, and MongoDB.
+
+​🕹️ Roll into React Development!
+📅 Time: 3 hours of interactive learning
+🎯 Who should attend: Beginners and intermediate web dev enthusiasts!
+
+​Don't miss your chance to level up your dev skills!
+          </p>
+          <Link
+                to='/event/66f6a40d52fdd3fdc354'
+                className="bg-gradient-to-b shadow-xl focus:ring-accent from-accent to-accent/90 p-4 text-white text-center"
+                style={{ borderRadius: "12px" }}
+              >
+                {token ? "VISIT EVENT PAGE" : "VISIT EVENT PAGE"}
+              </Link>
+        </div>
+      </section> 
       <section className="flex flex-col-reverse lg:flex-row-reverse w-full py-8 md:py-16 justify-between gap-8 md:gap-0 container bg-gray-900">
         <div className="" style={{ flexBasis: "55%" }}>
           <img alt="Club/Dept Images" className="w-full" src={Security} style={{borderRadius:"25px"}}/>
@@ -215,33 +250,7 @@ function Landing() {
   </ol>
         </div>
       </section>
-       {/* <section className="flex flex-col-reverse  lg:flex-row w-full py-8 md:py-16 justify-between gap-8 md:gap-0 container">
-        <div className="md:pt-16 " style={{ flexBasis: "50%" }}>
-          <img className="w-full" src={Hero2} />
-        </div>
-        <div
-          className="flex flex-col gap-4 items-start justify-evenly text-left py-8 lg:pl-16"
-          style={{ flexBasis: "50%" }}
-        >
-          <p className="text-accent tracking-[1px] font-semibold items-center gap-2 flex">
-            <hr className="w-20 h-1 bg-accent"></hr>
-          </p>
-          <h1 className="text-3xl md:text-5xl text-primary font-semibold md:leading-normal">
-            Promoted Events
-          </h1>
-          <hr className="w-full border border-neutral-200"></hr>
-          <p className="text-sm leading-[1.4rem] md:max-w-[90%] py-4 text-neutral-500 text-justify">
-            Promoted Event description
-          </p>
-          <Link
-                to=''
-                className="bg-gradient-to-b shadow-xl focus:ring-accent from-accent to-accent/90 p-4 text-white text-center"
-                style={{ borderRadius: "12px" }}
-              >
-                {token ? "[ PAID FEATURE ]" : "[ PAID FEATURE ]"}
-              </Link>
-        </div>
-      </section>  */}
+      
       <div className="bg-gradient-to-b from-secondary from-100% to-50% to-white pb-10" style={{ borderRadius: "25px 25px 0 0" }}>
         {/* <section className="flex flex-col lg:flex-row w-full items-center py-8 lg:pt-16 lg:pb-0 justify-between gap-4 md:gap-0 container">
           <div className="flex flex-row gap-16">

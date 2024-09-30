@@ -12,7 +12,7 @@ function Footer() {
       }>
     <ul className='md:w-full flex flex-row flex-wrap items-center justify-center gap-4'>
         {footerLinks.map((link, index) => 
-        <li className='border flex items-center justify-center rounded-2xl p-3 pr-8 pl-8 bg-gray-950 text-2xl hover:scale-125 transition-all'>
+        <li className='border flex items-center justify-center rounded-2xl p-3 pr-8 pl-8 bg-gray-950 border-gray-700 text-2xl hover:scale-125 transition-all'>
             <Link className='' target={'_blank'} to={link.link} title={link.title}>{link.icon}</Link>
         </li>
         )}
