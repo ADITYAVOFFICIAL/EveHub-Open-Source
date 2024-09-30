@@ -136,49 +136,49 @@ function convertTo12HourFormat(hours, minutes) {
   <button onClick={() => window.location.href = image} class="overlay-button primary-btn" style={{borderRadius:"8px", height:"50px"}}>View Full Image</button></div>
 
           <div className="flex flex-col md:hidden w-full space-y-4 ">
-            <div className="rounded-lg flex flex-col gap-4 outline w-full outline-1 outline-neutral-300 p-6 ">
-              <h2 className="font-bold text-xl">{title}</h2>
-              <h3 className="font-bold ">
+            <div className="rounded-lg flex flex-col gap-4 outline w-full outline-1 outline-none bg-zinc-900 p-6 ">
+              <h2 className="font-bold text-xl text-slate-200">{title}</h2>
+              <h3 className="font-bold text-slate-300">
   <span style={{ display: "flex", alignItems: "center" }}>
     {usernamee}
     <MdVerified style={{ color: "#17c3ff", marginLeft: "3px" }} />
   </span>
 </h3>
-              <h2 className="inline-flex items-center gap-2 text-sm">
+              <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
                 <IoBookmarkOutline /> {category}
               </h2>
               {duration?.length > 0 && (
-                <h2 className="inline-flex items-center gap-2 text-sm">
+                <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
                   <IoTimerOutline /> {duration.split(":").join("h ")}
                 </h2>
               )}
               {medium?.length > 0 && (
-  <h2 className="inline-flex items-center gap-2 text-sm">
+  <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
     <IoMegaphoneOutline /> {medium.charAt(0).toUpperCase() + medium.slice(1)}
   </h2>
 )}
               {language?.length > 0 && (
-                <h2 className="inline-flex items-center gap-2 text-sm">
+                <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
                   <IoLanguageOutline /> {language}
                 </h2>
               )}
              {maxParticipants && (
-  <h2 className="inline-flex items-center gap-2 text-sm">
+  <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
     <IoPeople />Available Seats : {maxParticipants}
   </h2>
 )}
 
-              <h2 className="inline-flex items-center gap-2 text-sm">
+              <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
                 <IoCalendarClearOutline /> {startDay}, {startTime}
                 {startDay === endDay && ` to ${endTime}`}
               </h2>
               {startDay !== endDay && endDate && endDay && (
-                <h2 className="inline-flex items-center gap-2 text-sm">
+                <h2 className="inline-flex items-center gap-2 text-sm text-slate-400">
                   <IoBookmarkOutline /> {endDay}, {endTime}
                 </h2>
               )}
               
-              <h2 className="inline-flex flex-wrap items-center gap-2 text-sm">
+              <h2 className="inline-flex flex-wrap items-center gap-2 text-sm text-slate-400">
                 {medium === "offline" ? (
                   <>
                     <IoLocationOutline />
@@ -192,11 +192,11 @@ function convertTo12HourFormat(hours, minutes) {
                 ) : (
                   <>
                     <MdComputer />
-                    <span className="overflow-hidden whitespace-nowrap">{meet[0] || "Online"}</span>
+                    <span className="overflow-hidden whitespace-nowrap text-slate-400">{meet[0] || "Online"}</span>
                   </>
                 )}
               </h2>
-              <div className="inline-flex items-center justify-between w-full ">
+              <div className="inline-flex items-center justify-between w-full text-slate-400">
                 <h2 className="inline-flex items-center gap-2 font-extrabold font-grostek text-xl mt-2">
                   <IoWalletOutline />{" "}
                   {price <= 0 ? (
@@ -213,7 +213,7 @@ function convertTo12HourFormat(hours, minutes) {
                 
               </div>
               { (name1 || ph1 || name2 || ph2) && (
-  <div className="rounded-lg flex flex-col gap-4 outline w-full outline-1 outline-neutral-300 p-6">
+  <div className="rounded-lg flex flex-col gap-4 outline w-full outline-1 outline-none bg-zinc-800 text-slate-400 p-6">
     <h2 className="font-bold text-md">Contact Details</h2>
     { name1 && (
       <p style={{ fontSize: "14px", margin: "0", padding: "0", lineHeight: "1" }}>
